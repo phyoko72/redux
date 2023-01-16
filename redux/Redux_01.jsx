@@ -1,5 +1,6 @@
 import store from "../reduxFolder"
 import {increment} from "../reduxFolder/count"
+import { setUserDetails } from "../reduxFolder/login";
 
 const Redux01 = () => {
     
@@ -24,7 +25,13 @@ const Redux01 = () => {
 
     console.log('increment: ',increment);
 
-    store.dispatch(increment())    
+    store.dispatch(increment())
+    store.dispatch(setUserDetails({    
+        firstName:'Daniel',
+        lastName:'Saw',
+        id: 123,
+        email:'daniel@gmail.com'
+    }))    
 
     return ( 
         <>
