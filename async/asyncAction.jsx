@@ -41,7 +41,7 @@ const fetchingUserRequest = () =>{
     return async function(dispatch){
         try {
             dispatch(fetchUserRequest())
-            const res = await axios.get('https://jsonplaceholder.typicode.com/user')
+            const res = await axios.get('https://jsonplaceholder.typicode.com/users')
             const users = res.data.map(user=>user.id)
             dispatch(fetchUserSucceeded(users))
         } catch (error) {
@@ -52,9 +52,9 @@ const fetchingUserRequest = () =>{
 
 const store = createStore(reducer,applyMiddleware(thunk))
 
-store.subscribe(()=>{
-    console.log('GetState: ',store.getState());
-})
+// store.subscribe(()=>{
+//     console.log('GetState: ',store.getState());
+// })
 
 store.dispatch(fetchingUserRequest())
 
