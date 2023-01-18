@@ -19,8 +19,8 @@ const UserView = () => {
             <h2 style={{textDecoration:'underline'}}>List of Users</h2>
 
             { users.loading && <h1>Loading...</h1> }
-            { users.loading && users.error ? <h3> {users.error} </h3>:'' }
-            { users.loading && users.users.length ? 
+            { !users.loading && users.error ? <h3> {users.error} </h3>:'' }
+            { !users.loading && users.users.length ? 
 
                 <ol>
                     {users.users.map(user=>(
