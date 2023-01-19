@@ -1,6 +1,7 @@
 import store from "./app/store";
 import cakeSlice from "./feature/cake/cakeSlice";
 import iceCreamSlice from "./feature/icecream/icecreamSlice";
+import { fetchStore } from "./store/storeSlice";
 import { fetchUsers } from "./users/userSlice";
 
 const {actions} = cakeSlice
@@ -17,12 +18,13 @@ const RTK = () => {
     // store.dispatch(actions.ordered())
     // store.dispatch(actions.ordered())
     // store.dispatch(actions.restocked(5))
-    store.dispatch( fetchUsers() )
+    // store.dispatch( fetchUsers() )
 
 
     // store.dispatch(iceCreamSlice.actions.ordered(2))
+    unsubscribe()
 
-    // unsubscribe()
+
 
     return ( 
         <>

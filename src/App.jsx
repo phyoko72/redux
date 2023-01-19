@@ -5,6 +5,7 @@ import CakeView from '../redux-toolkit/feature/cake/CakeView'
 import IceCreamView from '../redux-toolkit/feature/icecream/IceCreamView'
 import UserView from '../redux-toolkit/users/UserView'
 import CounterView from '../rtk/CounterView'
+import StoreView from '../redux-toolkit/store/storeView'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,6 +35,8 @@ function App() {
       <CakeView/>
       <br /> <hr /> <br />
       <IceCreamView/>
+      <br /> <hr /> <br />
+      <StoreView/>
       <br /> <hr /> <br />
       <UserView/>
       <br /> <hr /> <br />
