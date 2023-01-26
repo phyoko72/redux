@@ -7,21 +7,26 @@ body{
     background-color: rgba(0, 0, 139, 0.839);
     color: #333;
 }
+.title{
+    color: whitesmoke;
+}
 .container{
     width: 80%;
-    height: auto;
+    height: 600px;
     margin: auto;
     display: grid;
-    padding: 5px;
-    background: white;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+    /* padding: 5px; */
     gap: 10px;
+    background: white;
+    grid-template-columns: 125px 200px 125px;
+    grid-template-rows: 250px 100px 100px;
+    justify-content: center;
+    align-content: center;
 }
 .box{
-    width: 100%;
-    /* height: auto; */
-    height: 80px;
+    width: 80%;
+    height: auto;
+    /* height: 80px; */
     /* border: 1px solid #000; */
 }
 .box1{
@@ -41,9 +46,6 @@ body{
 }
 .box6{
     background: rgba(247, 5, 255, 0.925);
-    /* grid-column: 1/ span 3; */
-    grid-column: 1/ -1;
-    grid-row: 2;
 }
 .box7{
     background: teal;
