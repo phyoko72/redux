@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 139, 0.839);
+    color: #333;
+}
+.container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    padding: 5px;
+    background: white;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.box{
+    width: 100%;
+    /* height: auto; */
+    height: 80px;
+    /* border: 1px solid #000; */
+}
+.box1{
+    background: yellow;
+}
+.box2{
+    background: red;
+}
+.box3{
+    background: green;
+}
+.box4{
+    background: orange;
+}
+.box5{
+    background: rgba(26, 198, 236, 0.925);
+}
+.box6{
+    background: rgba(247, 5, 255, 0.925);
+    /* grid-column: 1/ span 3; */
+    grid-column: 1/ -1;
+    grid-row: 2;
+}
+.box7{
+    background: teal;
+}
+.box8{
+    background: chocolate;
+}
